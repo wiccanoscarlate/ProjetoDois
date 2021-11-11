@@ -1,0 +1,11 @@
+Aplicativo de Referência
+https://sites-api-a80fb.web.app/contacts/
+
+Documentação do Node.js http-server
+https://github.com/http-party/http-server
+
+Documentação do Firebase Firestore
+https://firebase.google.com/docs/firestore/quickstart?authuser=0
+
+Documentação do Firebase Authentication
+https://firebase.google.com/docs/auth/web/start?authuser=0

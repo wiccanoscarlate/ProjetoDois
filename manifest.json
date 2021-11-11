@@ -1,0 +1,16 @@
+{
+    "name": "ProjetoDois",
+    "short_name": "ProjetoDois",
+    "start_url": "index.html",
+    "scope": "./",
+    "icons": [
+      {
+        "src": "img/logo01_512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#ffd31d",
+    "background_color": "#333",
+    "display": "standalone"
+  }

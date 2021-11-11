@@ -1,0 +1,401 @@
+/* Reset no CSS */
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  transition: 0.2s;
+}
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+a {
+  color: steelblue;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0.85rem 0;
+}
+
+/* Fundo das páginas */
+
+body {
+  background-color: black;
+  background-image: url("img/background01.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Páginas */
+
+#pageHTML {
+  position: relative;
+  height: 100%;
+}
+
+article,
+aside {
+  background: rgba(255, 255, 255, 0.9);
+  border: 3px double grey;
+  margin: 0.25rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+  flex-grow: 1;
+}
+
+article *:first-child {
+  margin-top: 0;
+}
+
+aside {
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  #pageHTML {
+    display: flex;
+  }
+  aside {
+    margin-top: 0.25rem;
+    min-width: 200px;
+    max-width: 200px;
+  }
+}
+
+/* Estilos de uso geral */
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.fluid {
+  max-width: 100%;
+}
+
+.block {
+  display: block;
+}
+
+.margin-bottom {
+  margin-bottom: 1rem;
+}
+
+/* Tema */
+
+.wrap {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  max-width: 1024px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+
+header {
+  display: flex;
+  align-items: center;
+  background: rgb(13, 75, 93);
+  color: white;
+  margin: 0.25rem;
+  border: 3px double white;
+  border-radius: 0.4rem;
+  padding: 0.25rem;
+}
+
+header img {
+  width: 90px;
+  height: auto;
+  display: block;
+  margin-right: 1rem;
+}
+
+header h1 {
+  text-align: center;
+}
+
+header h1 small {
+  display: block;
+  font-size: 1rem;
+  -webkit-text-stroke: 0;
+  font-weight: normal;
+  color: white;
+  letter-spacing: 0.05rem;
+}
+
+/* Menu principal */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: rgb(32, 32, 32);
+  color: white;
+  margin: 0.25rem;
+  border: 3px double white;
+  border-radius: 0.4rem;
+  position: relative;
+}
+
+nav a {
+  padding: 0.5rem 0.7rem;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  height: 100%;
+}
+
+nav span {
+  display: block;
+}
+
+nav a:hover {
+  color: black;
+  background: #eee;
+}
+
+nav a:first-child {
+  margin-right: auto;
+}
+
+nav a i {
+  font-size: 1.5rem;
+  margin-bottom: 0.25rem;
+  height: 100%;
+}
+
+nav img {
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-bottom: 0.25rem;
+  border-radius: 50%;
+}
+
+@media (min-width: 640px) {
+  nav a {
+    flex-direction: row;
+  }
+  nav a i,
+  nav img {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    margin-right: 0.25rem;
+  }
+}
+
+/* Conteúdo */
+
+main {
+  flex-grow: 1;
+}
+
+/* Rodapé */
+
+footer {
+  background: black;
+  margin: 0.25rem;
+  border: 3px double white;
+  border-radius: 0.4rem;
+  color: white;
+}
+
+footer .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px dotted grey;
+}
+
+footer .link {
+  padding: 0.5rem;
+  cursor: pointer;
+  color: #eee;
+}
+
+footer .link:hover {
+  color: black;
+  background: #eee;
+}
+
+footer .link i {
+  font-size: 1.2rem;
+}
+
+footer .copyr {
+  font-size: 0.85rem;
+}
+
+footer .botton {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+}
+
+footer .botton div a {
+  padding: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  color: #eee;
+}
+
+footer .botton div a:hover {
+  color: black;
+  background: #eee;
+}
+
+footer .botton div i {
+  font-size: 1.4rem;
+  margin-right: 0.25rem;
+}
+
+/* Modal */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body {
+  display: table;
+  background: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  border: 3px double grey;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted grey;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.modal-text {
+  padding-top: 0.5rem;
+}
+
+.modal-close {
+  cursor: pointer;
+}
+
+/* Modal Login */
+
+#modalLogin {
+  display: none;
+}
+
+/* Cards */
+
+.card {
+  border-radius: 0.3rem;
+  border: 1px solid grey;
+}
+
+.card-table {
+  display: table;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.card-img {
+  text-align: center;
+  padding: 0.25rem;
+}
+
+.card-img img {
+  border-radius: 50%;
+}
+
+.card-content {
+  padding: 0 1rem;
+}
+
+.card-content h3,
+.card-content h4 {
+  margin: 0.5rem 0 0 0;
+}
+
+.card-content h4 {
+  color: rgb(82, 82, 82);
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.primary {
+  background: steelblue;
+  color: white;
+}
+
+.primary:hover {
+  background: rgb(26, 62, 92);
+  color: white;
+}
+
+.warning {
+  background: orangered;
+  color: white;
+}
+
+.warning:hover {
+  background: rgb(104, 28, 0);
+  color: white;
+}
+
+.separator {
+  border: none;
+  border-bottom: 1px dotted grey;
+}
